@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Zombie1 : MonoBehaviour
 {
-    public float speed = 2f;
-    public int wavePointIndex = 0;
+    public float speed = 1f;
     private Transform target;
+    private int waveNumber;
 
     void Start() {
-        target = WayPoints.points[wavePointIndex];
+        int index = (int) (transform.position.x / 4);
+        Debug.Log("x = " + transform.position.x + " index = " + index + " correct = " + (transform.position.x / 4.1f));
+        target = WayPoints.points[index];
     }
 
     void Update() {
