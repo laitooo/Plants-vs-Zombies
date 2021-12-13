@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 
 public class Plant1 : MonoBehaviour {
-    private Transform target;
 
     [Header("Attributes")]
     public float rotatingSpeed = 5f;
@@ -10,7 +9,9 @@ public class Plant1 : MonoBehaviour {
     private float fireConutdown = 0f;
 
     [Header("Unity setup fields")]
-    public string zombieTag;
+    private Transform target;
+    public string zombieTag = "Zombie";
+    public GameObject bulletPrefab;
 
     void Start() {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -55,6 +56,10 @@ public class Plant1 : MonoBehaviour {
     }
 
     void shoot() {
-        print("shoot");
+        Vector3 newPosition = transform.position;
+        newPosition.y += 2f;
+        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, newPosition, transform.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        bullet.seek(target);
     }
 }

@@ -4122,6 +4122,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant1
       objectReference: {fileID: 0}
+    - target: {fileID: 3128677779696767477, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128677779696767477, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8008133890772263078, guid: 651ffe21a0d16484a8d14cd8e1dba7d6, type: 3}
     - target: {fileID: 3128677779696767478, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}
       propertyPath: m_RootOrder
       value: 10
