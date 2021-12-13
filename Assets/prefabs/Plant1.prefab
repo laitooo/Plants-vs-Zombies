@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3638268bba1f8ce4a9c459c2346734d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotatingSpeed: 20
+  fireRate: 1
   zombieTag: Zombie
+  bulletPrefab: {fileID: 0}
 --- !u!1001 &3128677779814880856
 PrefabInstance:
   m_ObjectHideFlags: 0
