@@ -2,8 +2,17 @@ using System.Collections;
 using UnityEngine;
 
 public class Plant1 : MonoBehaviour {
+
+    [Header("Attributes")]
+    public float rotatingSpeed = 5f;
+    public float fireRate = 1f;
+    private float fireConutdown = 0f;
+
+    [Header("Unity setup fields")]
     private Transform target;
-    public string zombieTag;
+    public string zombieTag = "Zombie";
+    public GameObject bulletPrefab;
+
     void Start() {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
@@ -34,7 +43,23 @@ public class Plant1 : MonoBehaviour {
         }
 
         Quaternion lookRotation = Quaternion.LookRotation(target.position - transform.position);
-        Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * 10f).eulerAngles;
+        Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotatingSpeed)
+        .eulerAngles;
         transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+
+        if (fireConutdown <= 0f) {
+            shoot();
+            fireConutdown = 1f / fireRate;
+        }
+
+        fireConutdown -= Time.deltaTime;
+    }
+
+    void shoot() {
+        Vector3 newPosition = transform.position;
+        newPosition.y += 2f;
+        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, newPosition, transform.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        bullet.seek(target);
     }
 }
