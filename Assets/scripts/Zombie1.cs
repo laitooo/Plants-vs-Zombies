@@ -8,7 +8,6 @@ public class Zombie1 : MonoBehaviour
 
     void Start() {
         int index = (int) (transform.position.x / 4);
-        Debug.Log("x = " + transform.position.x + " index = " + index + " correct = " + (transform.position.x / 4.1f));
         target = WayPoints.points[index];
     }
 
