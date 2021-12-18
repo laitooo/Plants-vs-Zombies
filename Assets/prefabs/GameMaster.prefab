@@ -59,4 +59,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b3905c5d50bf94cb244994215811fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultPlant: {fileID: 3128677779696767476, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}
+  plant1: {fileID: 3128677779696767476, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}

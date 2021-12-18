@@ -4,3 +4,5 @@
 
 TODO: 
 - Make the plants focus on enemy in the same lane
+- Add another plant
+- Add zombie model
