@@ -12,13 +12,14 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public GameObject defaultPlant;
-
-    void Start() {
-        toBuild = defaultPlant;
-    }
+    public GameObject plant1;
     private GameObject toBuild;
+
     public GameObject getPlantToBuild() {
         return toBuild;
+    }
+
+    public void setPlantToBuild(GameObject gameObject) {
+        toBuild = gameObject;
     }
 }
