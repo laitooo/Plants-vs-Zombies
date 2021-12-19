@@ -13,6 +13,8 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject plant1;
+    public GameObject plant2;
+    public GameObject plant3;
     private GameObject toBuild;
 
     public GameObject getPlantToBuild() {
