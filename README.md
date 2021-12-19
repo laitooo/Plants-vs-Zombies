@@ -4,5 +4,7 @@
 
 TODO: 
 - Make the plants focus on enemy in the same lane
-- Add another plant
+- Add another plant                                                 done
 - Add zombie model
+- Create points manager
+- Control zombies health and speed
