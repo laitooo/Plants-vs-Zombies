@@ -1093,6 +1093,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396605015}
   m_CullTransparentMesh: 1
+--- !u!1 &406895203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2103842294847365945, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+  m_PrefabInstance: {fileID: 2103842295355641084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &406895207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406895203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cab4216e61cf64f8aac2fc57d0c89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!1001 &452466389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3012,6 +3030,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56454f28354b2a445b373b7797229584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plant1:
+    prefab: {fileID: 3128677779696767476, guid: fcb3d9dc5734a4045a30ac6b90521253, type: 3}
+    cost: 100
+  plant2:
+    prefab: {fileID: 5027443537569781941, guid: e1e3e23a7f1ee3441b289afb43056b91, type: 3}
+    cost: 50
+  plant3:
+    prefab: {fileID: 2115049726936213113, guid: ac9f82a50d3f5754ea99c20e8d0f9a99, type: 3}
+    cost: 150
 --- !u!1001 &1371541481
 PrefabInstance:
   m_ObjectHideFlags: 0
