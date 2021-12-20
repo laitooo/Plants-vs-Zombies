@@ -3,6 +3,7 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
+    private PlantBlueprint toBuild;
     
     void Awake() {
         if (instance != null) {
@@ -12,16 +13,25 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public GameObject plant1;
-    public GameObject plant2;
-    public GameObject plant3;
-    private GameObject toBuild;
-
-    public GameObject getPlantToBuild() {
-        return toBuild;
+    public bool canBuild() {
+        return toBuild != null;
     }
 
-    public void setPlantToBuild(GameObject gameObject) {
-        toBuild = gameObject;
+    public void selectPlantToBuild(PlantBlueprint plantBlueprint) {
+        toBuild = plantBlueprint;
+    }
+
+    public void buildPlantOn(Node node) {
+        if (PlayerStats.Money < toBuild.cost) {
+            selectPlantToBuild(null);  
+            Debug.Log("Not enough money");
+            return;
+        }
+
+        PlayerStats.Money -= toBuild.cost;
+        GameObject plant = (GameObject) Instantiate(toBuild.prefab, node.transform.position, node.transform.rotation);
+        node.plant = plant;
+        selectPlantToBuild(null);
+        Debug.Log("Built plant! money left = " + PlayerStats.Money);
     }
 }

@@ -4,7 +4,8 @@ public class Node : MonoBehaviour {
     public Color hover;
     private Color startColor;
     private Renderer rend;
-    private GameObject plant;
+    [Header("Optional")]
+    public GameObject plant;
     private BuildManager buildManager;
 
     void Start() {
@@ -14,7 +15,7 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseEnter() {
-        if (buildManager.getPlantToBuild() == null) {
+        if (!buildManager.canBuild()) {
             return;
         }
         rend.material.color = hover;
@@ -25,7 +26,7 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        if (buildManager.getPlantToBuild() == null) {
+        if (!buildManager.canBuild()) {
             Debug.Log("plant is null");
             return;
         }
@@ -36,8 +37,6 @@ public class Node : MonoBehaviour {
             return;
         }
 
-        GameObject toBuild = buildManager.getPlantToBuild();
-        plant = (GameObject) Instantiate(toBuild, transform.position, transform.rotation);
-        BuildManager.instance.setPlantToBuild(null);
+        buildManager.buildPlantOn(this);
     }
 }
