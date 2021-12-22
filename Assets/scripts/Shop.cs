@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour {
     public PlantBlueprint plant1;
@@ -8,6 +9,9 @@ public class Shop : MonoBehaviour {
 
     void Start() {
         buildManager = BuildManager.instance;
+        plant1.costText.text = plant1.cost.ToString() + "$";
+        plant2.costText.text = plant2.cost.ToString() + "$";
+        plant3.costText.text = plant3.cost.ToString() + "$";
     }
 
     public void purchasePlant1() {
