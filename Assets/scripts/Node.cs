@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Node : MonoBehaviour {
     public Color hover;
+    public Color noMoneyColor;
     private Color startColor;
     private Renderer rend;
     [Header("Optional")]
@@ -18,7 +19,12 @@ public class Node : MonoBehaviour {
         if (!buildManager.canBuild()) {
             return;
         }
-        rend.material.color = hover;
+
+        if (buildManager.hasMoney()) {
+            rend.material.color = hover;
+        } else {
+            rend.material.color = noMoneyColor;
+        }
     }
 
     void OnMouseExit() {

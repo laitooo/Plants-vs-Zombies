@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hover: {r: 0.20358667, g: 0.24436101, b: 0.7075472, a: 0}
+  noMoneyColor: {r: 1, g: 0.20783882, b: 0.033018887, a: 0}
+  plant: {fileID: 0}
 --- !u!65 &-3420424447517744269
 BoxCollider:
   m_ObjectHideFlags: 0
