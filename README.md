@@ -8,3 +8,4 @@ TODO:
 - Add zombie model
 - Create points manager                                             done
 - Control zombies health and speed
+- Good wave spawner
