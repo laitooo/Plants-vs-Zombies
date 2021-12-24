@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour {
 
     private Transform target;
     public GameObject impactEffect;
+    public int damage = 5;
     public float speed = 1f;
 
     void Start() {
@@ -16,7 +17,7 @@ public class Bullet : MonoBehaviour {
 
     void Update() {
         if (target == null) {
-            destroyObject();
+            Destroy(gameObject);
             return;
         }
         Vector3 dir = target.position - transform.position;
@@ -32,11 +33,14 @@ public class Bullet : MonoBehaviour {
     void HitTarget() {
         GameObject effect = (GameObject) Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effect, 2f);
-        Destroy(target.gameObject);
-        destroyObject();
+        Destroy(gameObject);
+        makeDamage(target);
     }
 
-    void destroyObject() {
-        Destroy(gameObject);
+    void makeDamage(Transform target) {
+        if (target != null) {
+            Zombie1 zombie = target.GetComponent<Zombie1>();
+            zombie.takeDamage(damage);
+        }
     }
 }
