@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6286105303861656539}
   - component: {fileID: 5299182839188071523}
   - component: {fileID: 8895534105705342005}
+  - component: {fileID: 7272688474863337099}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -75,3 +76,15 @@ MonoBehaviour:
   Money: 0
   moneyCounter: {fileID: 0}
   startMoney: 500
+--- !u!114 &7272688474863337099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026721962918115292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616f1935f133b3f47a38f87ea0fd0e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
