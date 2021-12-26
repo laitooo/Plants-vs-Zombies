@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
     public GameObject impactEffect;
     public int damage = 5;
     public float speed = 1f;
+    public bool canSlowZombie = false;
 
     void Start() {
         
@@ -39,8 +40,12 @@ public class Bullet : MonoBehaviour {
 
     void makeDamage(Transform target) {
         if (target != null) {
-            Zombie1 zombie = target.GetComponent<Zombie1>();
-            zombie.takeDamage(damage);
+            Zombie zombie = target.GetComponent<Zombie>();
+            if (canSlowZombie) {
+                zombie.slowAndDamge(damage, 2f);
+            } else {
+                zombie.takeDamage(damage);
+            }
         }
     }
 }

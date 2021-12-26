@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class Plant1 : MonoBehaviour {
+public class Plant : MonoBehaviour {
 
     [Header("Attributes")]
-    public float rotatingSpeed = 5f;
+    public float rotatingSpeed = 20f;
     public float fireRate = 1f;
+    public float fireRange = 20f;
     private float fireConutdown = 0f;
 
     [Header("Unity setup fields")]
@@ -23,14 +24,17 @@ public class Plant1 : MonoBehaviour {
         GameObject closestEnemy = null;
         foreach (GameObject enemy in enemies) {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-
-            if(distanceToEnemy < shortestDistance) {
-                shortestDistance = distanceToEnemy;
-                closestEnemy = enemy;
+            if (distanceToEnemy < fireRange) {
+                if(distanceToEnemy < shortestDistance) {
+                    shortestDistance = distanceToEnemy;
+                    closestEnemy = enemy;
+                }
             }
+            
         }
 
-        if (closestEnemy != null) { // TODO: check they are on the same lane too
+        if (closestEnemy != null) { 
+            // TODO: check they are on the same lane too
             target = closestEnemy.transform;
         } else {
             target = null;

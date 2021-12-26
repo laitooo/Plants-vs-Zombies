@@ -8,10 +8,6 @@ public class WaveSpawner : MonoBehaviour {
     private float countDown = 0f;
     private int waveIndex = 0;
 
-    void Start() {
-        
-    }
-
     void Update() {
         if (countDown <= 0f) {
             StartCoroutine(spawnWave());

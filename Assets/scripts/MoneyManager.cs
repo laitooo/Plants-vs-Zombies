@@ -26,6 +26,11 @@ public class MoneyManager : MonoBehaviour {
         updateText();
     }
 
+    public void gainMoney(int amount) {
+        Money += amount;
+        updateText();
+    }
+
     void updateText() {
         moneyCounter.text = "Money = " + Money.ToString() + "$";
     }

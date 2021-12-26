@@ -41,6 +41,5 @@ public class BuildManager : MonoBehaviour
         GameObject plant = (GameObject) Instantiate(toBuild.prefab, node.transform.position, node.transform.rotation);
         node.plant = plant;
         selectPlantToBuild(null);
-        Debug.Log("Built plant! money left = " + moneyManager.Money);
     }
 }
