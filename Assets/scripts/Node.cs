@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class Node : MonoBehaviour {
-    public Color hover;
+    public Color hoverColor;
     public Color noMoneyColor;
     private Color startColor;
     private Renderer rend;
@@ -21,7 +21,7 @@ public class Node : MonoBehaviour {
         }
 
         if (buildManager.hasMoney()) {
-            rend.material.color = hover;
+            rend.material.color = hoverColor;
         } else {
             rend.material.color = noMoneyColor;
         }
@@ -44,5 +44,6 @@ public class Node : MonoBehaviour {
         }
 
         buildManager.buildPlantOn(this);
+        rend.material.color = startColor;
     }
 }
