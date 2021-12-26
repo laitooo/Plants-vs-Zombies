@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3128677779696767478}
-  - component: {fileID: 3128677779696767477}
+  - component: {fileID: 6946857686965946224}
   m_Layer: 0
   m_Name: Plant1
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3128677779696767477
+--- !u!114 &6946857686965946224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,11 +41,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3128677779696767476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3638268bba1f8ce4a9c459c2346734d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2acd06016beb7ec4a89685dbcfa228c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotatingSpeed: 20
   fireRate: 1
+  fireRange: 20
   zombieTag: Zombie
   bulletPrefab: {fileID: 8008133890772263078, guid: 651ffe21a0d16484a8d14cd8e1dba7d6, type: 3}
 --- !u!1001 &3128677779814880856
