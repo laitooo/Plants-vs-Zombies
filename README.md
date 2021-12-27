@@ -7,5 +7,5 @@ TODO:
 - Add another plant                                                 done
 - Add zombie model
 - Create points manager                                             done
-- Control zombies health and speed
+- Control zombies health and speed                                  done
 - Good wave spawner
