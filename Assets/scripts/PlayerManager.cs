@@ -15,8 +15,10 @@ public class PlayerManager : MonoBehaviour {
     public Text livesCounter;
     public int startLives = 20;
     public int Lives;
+    public int rounds;
     void Start() {
       Lives = 20;
+      rounds = 0;
       updateText();  
     }
 
