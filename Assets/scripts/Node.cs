@@ -48,9 +48,9 @@ public class Node : MonoBehaviour {
         if (buildManager.canRemove()) {
             if (plant != null) {
                 Destroy(plant);
-                buildManager.removeToolClicked();
-                rend.material.color = startColor;
-            }
+            } 
+            buildManager.removeToolClicked();
+            rend.material.color = startColor;
         }
 
         if (!buildManager.canBuild()) {
