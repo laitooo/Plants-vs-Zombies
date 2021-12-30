@@ -5,6 +5,7 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance;
     private PlantBlueprint toBuild;
     private MoneyManager moneyManager;
+    private bool isRmoveToolSelected;
     
     void Awake() {
         if (instance != null) {
@@ -15,7 +16,12 @@ public class BuildManager : MonoBehaviour
     }
 
     void Start() {
+        isRmoveToolSelected = false;
         moneyManager = MoneyManager.instance;
+    }
+
+    public bool canRemove() {
+        return isRmoveToolSelected;
     }
 
     public bool canBuild() {
@@ -28,6 +34,7 @@ public class BuildManager : MonoBehaviour
 
     public void selectPlantToBuild(PlantBlueprint plantBlueprint) {
         toBuild = plantBlueprint;
+        isRmoveToolSelected = false;
     }
 
     public void buildPlantOn(Node node) {
@@ -41,5 +48,12 @@ public class BuildManager : MonoBehaviour
         GameObject plant = (GameObject) Instantiate(toBuild.prefab, node.transform.position, node.transform.rotation);
         node.plant = plant;
         selectPlantToBuild(null);
+    }
+
+    public void removeToolClicked() {
+        isRmoveToolSelected = !isRmoveToolSelected;
+        if (isRmoveToolSelected) {
+            toBuild = null;
+        }
     }
 }

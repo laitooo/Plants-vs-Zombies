@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Node : MonoBehaviour {
     public Color hoverColor;
-    public Color noMoneyColor;
+    public Color errorColor;
     private Color startColor;
     private Renderer rend;
     [Header("Optional")]
@@ -16,14 +16,27 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseEnter() {
+        if (buildManager.canRemove()) {
+            if (plant == null) {
+                rend.material.color = errorColor;
+            } else {
+                rend.material.color = hoverColor;
+            }
+            return;
+        }
+
         if (!buildManager.canBuild()) {
             return;
         }
 
         if (buildManager.hasMoney()) {
-            rend.material.color = hoverColor;
+            if (plant != null) {
+                rend.material.color = errorColor;
+            } else {
+                rend.material.color = hoverColor;
+            }
         } else {
-            rend.material.color = noMoneyColor;
+            rend.material.color = errorColor;
         }
     }
 
@@ -32,6 +45,14 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseDown() {
+        if (buildManager.canRemove()) {
+            if (plant != null) {
+                Destroy(plant);
+                buildManager.removeToolClicked();
+                rend.material.color = startColor;
+            }
+        }
+
         if (!buildManager.canBuild()) {
             Debug.Log("plant is null");
             return;
