@@ -9,3 +9,5 @@ TODO:
 - Create points manager                                             done
 - Control zombies health and speed                                  done
 - Good wave spawner
+- Remove enemy tool                                                 done
+- Points from sunflowers
