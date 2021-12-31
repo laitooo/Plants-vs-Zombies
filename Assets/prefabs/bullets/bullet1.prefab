@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7595021846375644901}
   - component: {fileID: -7338337911116788156}
   m_Layer: 0
-  m_Name: Bullet2
+  m_Name: bullet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5653ae95424d944ca096df1c73d7bc4, type: 2}
+  - {fileID: 2100000, guid: cec345efd8ee40347bbd8ff9ccd786d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,5 +110,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 8111932067762858595, guid: 9c5c0ef6fa26cdf42adbfa1977e607b8, type: 3}
   damage: 5
-  speed: 50
-  canSlowZombie: 1
+  speed: 20
+  canSlowZombie: 0
