@@ -5,7 +5,10 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance;
     private PlantBlueprint toBuild;
     private MoneyManager moneyManager;
-    private bool isRmoveToolSelected;
+    [HideInInspector]
+    public bool isRemoveToolSelected;
+    [HideInInspector]
+    public bool isUpgrading;
     
     void Awake() {
         if (instance != null) {
@@ -16,12 +19,9 @@ public class BuildManager : MonoBehaviour
     }
 
     void Start() {
-        isRmoveToolSelected = false;
+        isRemoveToolSelected = false;
+        isUpgrading = false;
         moneyManager = MoneyManager.instance;
-    }
-
-    public bool canRemove() {
-        return isRmoveToolSelected;
     }
 
     public bool canBuild() {
@@ -34,7 +34,8 @@ public class BuildManager : MonoBehaviour
 
     public void selectPlantToBuild(PlantBlueprint plantBlueprint) {
         toBuild = plantBlueprint;
-        isRmoveToolSelected = false;
+        isRemoveToolSelected = false;
+        isUpgrading = plantBlueprint == null ? false : plantBlueprint.isUpgradePlant;
     }
 
     public void buildPlantOn(Node node) {
@@ -47,13 +48,37 @@ public class BuildManager : MonoBehaviour
         moneyManager.useMoney(toBuild.cost);
         GameObject plant = (GameObject) Instantiate(toBuild.prefab, node.transform.position, node.transform.rotation);
         node.plant = plant;
+        node.isPlantUpgradeable = toBuild.isUpgradeable;
+        selectPlantToBuild(null);
+    }
+
+    public void upgradePlantOn(Node node) {
+        // TODO : remove duplicate code
+        if (moneyManager.Money < toBuild.cost) {
+            selectPlantToBuild(null);  
+            Debug.Log("Not enough money");
+            return;
+        }
+
+        if (!node.isPlantUpgradeable) {
+            selectPlantToBuild(null);  
+            Debug.Log("Not upgradeable plant");
+            return;
+        }
+        
+        moneyManager.useMoney(toBuild.cost);
+        GameObject plant = (GameObject) Instantiate(toBuild.prefab, node.transform.position, node.transform.rotation);
+        Destroy(node.plant);
+        node.plant = plant;
+        node.isPlantUpgradeable = toBuild.isUpgradeable;
         selectPlantToBuild(null);
     }
 
     public void removeToolClicked() {
-        isRmoveToolSelected = !isRmoveToolSelected;
-        if (isRmoveToolSelected) {
+        isRemoveToolSelected = !isRemoveToolSelected;
+        if (isRemoveToolSelected) {
             toBuild = null;
+            isUpgrading = false;
         }
     }
 }

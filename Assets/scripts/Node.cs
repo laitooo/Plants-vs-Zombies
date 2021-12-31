@@ -5,8 +5,10 @@ public class Node : MonoBehaviour {
     public Color errorColor;
     private Color startColor;
     private Renderer rend;
-    [Header("Optional")]
+    [Header("HideInInspector")]
     public GameObject plant;
+    [Header("HideInInspector")]
+    public bool isPlantUpgradeable;
     private BuildManager buildManager;
 
     void Start() {
@@ -16,7 +18,7 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseEnter() {
-        if (buildManager.canRemove()) {
+        if (buildManager.isRemoveToolSelected) {
             if (plant == null) {
                 rend.material.color = errorColor;
             } else {
@@ -30,10 +32,19 @@ public class Node : MonoBehaviour {
         }
 
         if (buildManager.hasMoney()) {
-            if (plant != null) {
-                rend.material.color = errorColor;
+            if (buildManager.isUpgrading) {
+                if (plant == null || !isPlantUpgradeable) {
+                    // TODO : check type of plant to upgrade
+                    rend.material.color = errorColor;
+                } else {
+                    rend.material.color = hoverColor;
+                }
             } else {
-                rend.material.color = hoverColor;
+                if (plant != null) {
+                    rend.material.color = errorColor;
+                } else {
+                    rend.material.color = hoverColor;
+                }
             }
         } else {
             rend.material.color = errorColor;
@@ -45,9 +56,10 @@ public class Node : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        if (buildManager.canRemove()) {
+        if (buildManager.isRemoveToolSelected) {
             if (plant != null) {
                 Destroy(plant);
+                isPlantUpgradeable = false;
             } 
             buildManager.removeToolClicked();
             rend.material.color = startColor;
@@ -58,13 +70,24 @@ public class Node : MonoBehaviour {
             return;
         }
 
-        if (plant != null) {
-            // TODO : display on screen
-            Debug.Log("can't build here");
-            return;
+        if (buildManager.isUpgrading) {
+            if (plant == null) {
+                // TODO : display on screen
+                Debug.Log("No plants to upgrade");
+            } else {
+                // TODO : make sure this is the correct plant
+                buildManager.upgradePlantOn(this);
+                rend.material.color = startColor;
+            }
+        } else {
+            if (plant != null) {
+                // TODO : display on screen
+                Debug.Log("can't build here");
+            } else {
+                buildManager.buildPlantOn(this);
+                rend.material.color = startColor;
+            }
         }
 
-        buildManager.buildPlantOn(this);
-        rend.material.color = startColor;
     }
 }

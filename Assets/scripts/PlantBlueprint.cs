@@ -7,4 +7,6 @@ public class PlantBlueprint {
     public GameObject prefab;
     public int cost;
     public Text costText;
+    public bool isUpgradePlant = false;
+    public bool isUpgradeable = false;
 }
