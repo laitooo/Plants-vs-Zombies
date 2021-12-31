@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotatingSpeed: 20
-  fireRate: 1
-  fireRange: 20
+  fireRange: 50
+  firstFireTime: 1
+  secondFireTime: 0
   zombieTag: Zombie
   bulletPrefab: {fileID: 8008133890772263078, guid: 651ffe21a0d16484a8d14cd8e1dba7d6, type: 3}
 --- !u!1001 &3128677779814880856
