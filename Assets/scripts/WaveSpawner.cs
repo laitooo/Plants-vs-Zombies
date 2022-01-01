@@ -5,6 +5,7 @@ public class WaveSpawner : MonoBehaviour {
     public Transform enemyPrefab;
     public Text countDownText;
     public float timeBetweenWaves = 5f;
+    public float timeBetweenZombies = 1f;
     private float countDown = 0f;
     private int waveIndex = 0;
 
@@ -26,7 +27,7 @@ public class WaveSpawner : MonoBehaviour {
         PlayerManager.instance.rounds++;
         for (int i=0; i<waveIndex; i++) {
             spawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(timeBetweenZombies);
         }
     }
 
