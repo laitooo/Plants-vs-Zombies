@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+    public string menuScene = "MainMenu";
     public GameObject gameOverUi;
     public GameObject pauseMenuUi;
     public Text roundsText;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour {
         roundsText.text = PlayerManager.instance.rounds.ToString();
         isGameEnded = true;
         Debug.Log("Game over!");
+        Time.timeScale = 0f;
     }
 
     public void toggle() {
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void menu() {
-        Debug.Log("Go to menu"); 
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(menuScene);
     }
 }
