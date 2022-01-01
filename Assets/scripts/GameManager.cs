@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public GameObject gameOverUi;
     public GameObject pauseMenuUi;
     public Text roundsText;
+    public SceneChanger sceneChanger;
     [HideInInspector]
     public static bool isGameEnded;
 
@@ -48,11 +49,11 @@ public class GameManager : MonoBehaviour {
 
     public void retry() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneChanger.transitionTo(SceneManager.GetActiveScene().name);
     }
 
     public void menu() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(menuScene);
+        sceneChanger.transitionTo(menuScene);
     }
 }
