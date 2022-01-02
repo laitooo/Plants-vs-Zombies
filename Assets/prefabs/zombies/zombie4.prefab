@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8214278792166718111}
   - component: {fileID: 2444352312331661626}
   m_Layer: 0
-  m_Name: zombie1
+  m_Name: zombie4
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7647542894553211748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3737273, y: -9.0259905, z: 22.78613}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d23d07583c480c847922365939cdf1ee, type: 2}
+  - {fileID: 2100000, guid: d0024ba3ef6fcf145830efeeac4be762, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd51bc85ac6379489bfb0396dff2081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 3
-  defaultHealth: 20
+  defaultSpeed: 1.5
+  defaultHealth: 30
   health: 0
   speed: 0
   slownessTimer: 0
