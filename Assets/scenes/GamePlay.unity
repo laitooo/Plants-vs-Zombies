@@ -7093,6 +7093,46 @@ PrefabInstance:
       propertyPath: timeBetweenWaves
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[0].zombie
+      value: 
+      objectReference: {fileID: 7647542894553211748, guid: 8e5d2c5bb39fb9148b72df10ce1fe875, type: 3}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[1].zombie
+      value: 
+      objectReference: {fileID: 7647542894553211748, guid: 066e7a7fa10a882428ee95aa1ea90f16, type: 3}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[2].zombie
+      value: 
+      objectReference: {fileID: 7647542894553211748, guid: 7460acc805dc82940ba8e5f372154c0e, type: 3}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[0].spawnDelay
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[1].spawnDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[2].spawnDelay
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[0].numberZombies
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[1].numberZombies
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286105303861656539, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
+      propertyPath: waves.Array.data[2].numberZombies
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7272688474863337099, guid: 8da4b8df455ab75429395d3c3c8da327, type: 3}
       propertyPath: livesCounter
       value: 
