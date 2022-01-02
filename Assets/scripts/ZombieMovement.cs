@@ -31,6 +31,7 @@ public class ZombieMovement : MonoBehaviour {
 
     void reachedEnd() {
         PlayerManager.instance.looseLife();
+        WaveSpawner.zombiesAlive--;
         Destroy(gameObject);
     }
 }
