@@ -18,6 +18,11 @@ public class WaveSpawner : MonoBehaviour {
         if (zombiesAlive > 0) {
             return;
         }
+        
+        if (waveIndex == waves.Length) {
+            Debug.Log("You won");
+            this.enabled = false;
+        }
 
         if (countDown <= 0f) {
             StartCoroutine(spawnWave());
@@ -37,11 +42,6 @@ public class WaveSpawner : MonoBehaviour {
             yield return new WaitForSeconds(wave.spawnDelay);
         }
         waveIndex++;
-
-        if (waveIndex == waves.Length) {
-            Debug.Log("You won");
-            this.enabled = false;
-        }
     }
 
     void spawnEnemy(GameObject prefab) {

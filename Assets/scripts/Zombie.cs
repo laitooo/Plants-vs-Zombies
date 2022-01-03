@@ -10,20 +10,23 @@ public class Zombie : MonoBehaviour
     public float speed;
     [HideInInspector]
     public float slownessTimer = 0f;
+    private bool isDead;
 
     void Start() {
+        isDead = false;
         health = defaultHealth;
         speed = defaultSpeed;
     }
 
     public void takeDamage(int amount) {
         health -= amount;
-        if (health < 1) {
+        if (health < 1 && !isDead) {
             die();
         }
     }
 
     void die() {
+        isDead = true;
         // TODO: remove later
         MoneyManager.instance.gainMoney(10);
         WaveSpawner.zombiesAlive--;
