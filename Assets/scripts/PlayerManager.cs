@@ -14,7 +14,9 @@ public class PlayerManager : MonoBehaviour {
 
     public Text livesCounter;
     public int startLives = 20;
+    [HideInInspector]
     public int Lives;
+    [HideInInspector]
     public int rounds;
     void Start() {
       Lives = 20;

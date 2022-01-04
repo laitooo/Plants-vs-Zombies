@@ -11,10 +11,12 @@ public class MoneyManager : MonoBehaviour {
         }
         instance = this;
     }
-
+    
+    [HideInInspector]
     public int Money;
     public Text moneyCounter;
-    public int startMoney = 400;
+    public int startMoney = 50;
+    public int pointAmount = 25;
 
     void Start() {
         Money = startMoney;
@@ -24,6 +26,10 @@ public class MoneyManager : MonoBehaviour {
     public void useMoney(int amount) {
         Money -= amount;
         updateText();
+    }
+
+    public void onPointClicked() {
+        gainMoney(pointAmount);
     }
 
     public void gainMoney(int amount) {
