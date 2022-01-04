@@ -3,7 +3,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+
+    public static GameManager instance;    
+    void Awake() {
+        if (instance != null) {
+            Debug.LogError("More than one game manager in the scene!");
+            return;
+        }
+        instance = this;
+    }
+
     public string menuScene = "MainMenu";
+    public string levelSelectorScene = "LevelSelector";
     public GameObject gameOverUi;
     public GameObject pauseMenuUi;
     public Text roundsText;
@@ -55,5 +66,9 @@ public class GameManager : MonoBehaviour {
     public void menu() {
         Time.timeScale = 1f;
         sceneChanger.transitionTo(menuScene);
+    }
+
+    public void wonLevel() {
+        sceneChanger.transitionTo(levelSelectorScene);
     }
 }

@@ -20,7 +20,8 @@ public class WaveSpawner : MonoBehaviour {
         }
         
         if (waveIndex == waves.Length) {
-            Debug.Log("You won");
+            // TODO: do animation here
+            GameManager.instance.wonLevel();
             this.enabled = false;
         }
 
