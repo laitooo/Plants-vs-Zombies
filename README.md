@@ -11,6 +11,7 @@ TODO:
 - Good wave spawner
 - Remove enemy tool                                                 done
 - Points from sunflowers
+- Points from sky                                                   done
 - Good Background
 - Soundtracks
 - Use loading screen instead of fading out
