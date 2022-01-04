@@ -27,8 +27,6 @@ public class Zombie : MonoBehaviour
 
     void die() {
         isDead = true;
-        // TODO: remove later
-        MoneyManager.instance.gainMoney(10);
         WaveSpawner.zombiesAlive--;
         Destroy(gameObject);
     }
