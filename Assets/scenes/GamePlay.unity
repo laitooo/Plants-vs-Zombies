@@ -4513,7 +4513,7 @@ MonoBehaviour:
     isUpgradePlant: 0
     isUpgradeable: 1
   plant2:
-    prefab: {fileID: 5027443537569781941, guid: e1e3e23a7f1ee3441b289afb43056b91, type: 3}
+    prefab: {fileID: 2626507805085806352, guid: a6e7437dd2f25d04383de4be4b9c9bbd, type: 3}
     cost: 50
     costText: {fileID: 1787780981}
     isUpgradePlant: 0
@@ -5149,7 +5149,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1544007680
 RectTransform:
