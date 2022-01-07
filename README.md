@@ -10,7 +10,7 @@ TODO:
 - Control zombies health and speed                                  done
 - Good wave spawner
 - Remove enemy tool                                                 done
-- Points from sunflowers
+- Points from sunflowers                                            done
 - Points from sky                                                   done
 - Good Background
 - Soundtracks
