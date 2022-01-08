@@ -36,6 +36,7 @@ public class BuildManager : MonoBehaviour
         toBuild = plantBlueprint;
         isRemoveToolSelected = false;
         isUpgrading = plantBlueprint == null ? false : plantBlueprint.isUpgradePlant;
+        AudioManager.instance.play("Select");
     }
 
     public void buildPlantOn(Node node) {
@@ -50,6 +51,7 @@ public class BuildManager : MonoBehaviour
         node.plant = plant;
         node.isPlantUpgradeable = toBuild.isUpgradeable;
         selectPlantToBuild(null);
+        AudioManager.instance.play("Plant");
     }
 
     public void upgradePlantOn(Node node) {
@@ -72,6 +74,7 @@ public class BuildManager : MonoBehaviour
         node.plant = plant;
         node.isPlantUpgradeable = toBuild.isUpgradeable;
         selectPlantToBuild(null);
+        AudioManager.instance.play("Plant");
     }
 
     public void removeToolClicked() {
@@ -80,5 +83,6 @@ public class BuildManager : MonoBehaviour
             toBuild = null;
             isUpgrading = false;
         }
+        AudioManager.instance.play("Select");
     }
 }

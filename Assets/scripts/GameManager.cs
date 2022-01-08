@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour {
 
     void Start() {
         isGameEnded = false;
+        AudioManager.instance.stop("MenuBackground");
+        AudioManager.instance.play("GamePlayBackground");
     }
 
     void Update() {

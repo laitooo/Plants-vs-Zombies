@@ -36,6 +36,8 @@ public class Bullet : MonoBehaviour {
         Destroy(effect, 2f);
         Destroy(gameObject);
         makeDamage(target);
+        // TODO: change sound depending on zombie type
+        AudioManager.instance.play("HitNormal");
     }
 
     void makeDamage(Transform target) {

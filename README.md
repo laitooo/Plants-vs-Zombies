@@ -13,5 +13,9 @@ TODO:
 - Points from sunflowers                                            done
 - Points from sky                                                   done
 - Good Background
-- Soundtracks
+- Soundtracks                                                       done
 - Use loading screen instead of fading out
+- Ready set go
+- Ground texture
+- Background texture
+- Level won 
