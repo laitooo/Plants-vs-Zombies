@@ -60,6 +60,7 @@ public class Node : MonoBehaviour {
             if (plant != null) {
                 Destroy(plant);
                 isPlantUpgradeable = false;
+                AudioManager.instance.play("Remove");
             } 
             buildManager.removeToolClicked();
             rend.material.color = startColor;

@@ -30,6 +30,7 @@ public class MoneyManager : MonoBehaviour {
 
     public void onPointClicked() {
         gainMoney(pointAmount);
+        AudioManager.instance.play("CollectPoint");
     }
 
     public void gainMoney(int amount) {
