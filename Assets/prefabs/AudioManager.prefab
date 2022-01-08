@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6771876900072089826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6771876900072089824}
+  - component: {fileID: 6771876900072089825}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6771876900072089824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771876900072089826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.97894096, y: 2.8007293, z: 14.392615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6771876900072089825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771876900072089826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de8e9cf120fc5d49ab135745d5d56c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GamePlayBackground
+    clip: {fileID: 8300000, guid: da3e691f5dfb6214a98ab6d3ada9be36, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: MenuBackground
+    clip: {fileID: 8300000, guid: 40236b0dce68fe040880e2efc4769fdd, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: HitNormal
+    clip: {fileID: 8300000, guid: ce3871a143367b346b8b4d6026af6c7b, type: 3}
+    source: {fileID: 0}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+  - name: HitPlastic
+    clip: {fileID: 8300000, guid: 75a8bb2df1f54fe42ad40efeb3f58ed1, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: HitMetal
+    clip: {fileID: 8300000, guid: 49f480a6cdde9644cbe4b0b7aaa0fa7d, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: Select
+    clip: {fileID: 8300000, guid: 05974a09e6160a744baa52ffe9a5def8, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: Plant
+    clip: {fileID: 8300000, guid: 8f3f00d48edbcbe4e98e73012f0357d3, type: 3}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+  - name: Remove
+    clip: {fileID: 8300000, guid: b861080afce43d54ba4e144254722410, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: ReadySetStart
+    clip: {fileID: 8300000, guid: 592c5d0092e13064caad0da68c060a38, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: CollectPoint
+    clip: {fileID: 8300000, guid: 10f33acbd441847468824cc09fe65b8c, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
