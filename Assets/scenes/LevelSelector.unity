@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2021866451}
   m_HandleRect: {fileID: 2021866450}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1118,6 +1118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelButton2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1002147384600228077, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1002147384600228079, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1176,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1184,15 +1188,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1224,11 +1228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 245
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384607508607, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1483,7 +1487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384600228079, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level01
+      value: GamePlay
       objectReference: {fileID: 0}
     - target: {fileID: 1002147384600228079, guid: b3ee63e7ea94f6e4b94ee34b975eaa58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1635,7 +1639,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4eea04fe85764514cbaabd4bd9dc88d7, type: 2}
+  - {fileID: 2100000, guid: 0f2b29016a348834a9838590227a7285, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

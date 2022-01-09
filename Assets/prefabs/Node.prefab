@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e43d3999e71461b46b4fe14f8f17c479, type: 2}
+  - {fileID: 2100000, guid: 0f2b29016a348834a9838590227a7285, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   hoverColor: {r: 0, g: 0.34496382, b: 0.9528302, a: 0}
   errorColor: {r: 1, g: 0, b: 0, a: 0}
   plant: {fileID: 0}
+  isPlantUpgradeable: 0
 --- !u!65 &-3420424447517744269
 BoxCollider:
   m_ObjectHideFlags: 0
