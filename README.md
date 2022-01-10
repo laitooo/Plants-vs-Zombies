@@ -12,10 +12,13 @@ TODO:
 - Remove enemy tool                                                 done
 - Points from sunflowers                                            done
 - Points from sky                                                   done
-- Good Background
+- Good Background                                                   done
 - Soundtracks                                                       done
 - Use loading screen instead of fading out
 - Ready set go
 - Ground texture
 - Background texture
 - Level won 
+- Plants health
+- Levels
+- Zombie waves bar
