@@ -4,7 +4,6 @@ using UnityEngine;
 public class Plant : MonoBehaviour {
 
     [Header("Attributes")]
-    public float rotatingSpeed = 20f;
     public float fireRange = 20f;
     public float firstFireTime = 2f;
     public float secondFireTime = 0f;
@@ -28,10 +27,14 @@ public class Plant : MonoBehaviour {
         GameObject closestEnemy = null;
         foreach (GameObject enemy in enemies) {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < fireRange) {
-                if(distanceToEnemy < shortestDistance) {
-                    shortestDistance = distanceToEnemy;
-                    closestEnemy = enemy;
+            if (Mathf.Abs(enemy.transform.position.x - transform.position.x) < 1) {
+                if (enemy.transform.position.z > transform.position.z) {
+                    if (distanceToEnemy < fireRange) {
+                        if(distanceToEnemy < shortestDistance) {
+                            shortestDistance = distanceToEnemy;
+                            closestEnemy = enemy;
+                        }
+                    }
                 }
             }
             
@@ -49,11 +52,6 @@ public class Plant : MonoBehaviour {
         if (target == null) {
             return;
         }
-
-        Quaternion lookRotation = Quaternion.LookRotation(target.position - transform.position);
-        Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotatingSpeed)
-        .eulerAngles;
-        transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
         if (fireConutdown <= 0f) {
             shoot();

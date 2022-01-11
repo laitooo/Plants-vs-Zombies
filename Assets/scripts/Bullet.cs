@@ -3,7 +3,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
     private Transform target;
-    public GameObject impactEffect;
     public int damage = 5;
     public float speed = 1f;
     public bool canSlowZombie = false;
@@ -32,8 +31,6 @@ public class Bullet : MonoBehaviour {
     }
 
     void HitTarget() {
-        GameObject effect = (GameObject) Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effect, 2f);
         Destroy(gameObject);
         makeDamage(target);
         // TODO: change sound depending on zombie type

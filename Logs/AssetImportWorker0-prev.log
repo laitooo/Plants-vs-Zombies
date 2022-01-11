@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.1348; Version 2004; 64bit' Language: 'en' Physical Memory: 8072 MB
+OS: 'Windows 10 Pro; OS build 19041.1415; Version 2004; 64bit' Language: 'en' Physical Memory: 8072 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ Z:/Projects/Unity/plantsVsZombies/Plants vs Zombies
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60769
+51780
 Successfully changed project path to: Z:/Projects/Unity/plantsVsZombies/Plants vs Zombies
 Z:/Projects/Unity/plantsVsZombies/Plants vs Zombies
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 105.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,353 +35,1094 @@ Initialize mono
 Mono path[0] = 'C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002959 seconds.
+Registered in 0.005489 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 135.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.218 seconds
+- Completed reload, in  9.822 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004111 seconds.
+Registered in 0.004592 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 64.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  4.546 seconds
+- Completed reload, in  2.623 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.8 MB.
-System memory in use after: 64.9 MB.
+<WakaTime> Got response
+{"data":{"id":"2c44aaef-c207-45f7-861a-a2c620ddfeea"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1823.
-Total: 3.936600 ms (FindLiveObjects: 0.316700 ms CreateObjectMapping: 0.088600 ms MarkObjects: 3.303900 ms  DeleteObjects: 0.225000 ms)
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
 
-========================================================================
-Received Import Request.
-  path: Assets/models/plant1/source/PeaShooter2.fbx
-  artifactKey: Guid(02de5aadce742394ba32b424cdb03243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1/source/PeaShooter2.fbx using Guid(02de5aadce742394ba32b424cdb03243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03528eef5a1b78a8604587626252a8d9') in 0.594906 seconds
-  Import took 0.601541 seconds .
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000638 seconds.
-  path: Assets/models/plant1
-  artifactKey: Guid(39cfbf37fb8600f45a7d91ed53c0e472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1 using Guid(39cfbf37fb8600f45a7d91ed53c0e472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff54493d546c47cb07d8cfb90b06894') in 0.017558 seconds
-  Import took 0.023704 seconds .
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/models/plant1/source
-  artifactKey: Guid(3f89865e3df615b4ca086c037b8be406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1/source using Guid(3f89865e3df615b4ca086c037b8be406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de6abb0902e3ff601058b92fbb71227') in 0.016130 seconds
-  Import took 0.023208 seconds .
+Unloading 1601 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.8 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2059.
+Total: 3.143300 ms (FindLiveObjects: 0.216200 ms CreateObjectMapping: 0.093600 ms MarkObjects: 2.490400 ms  DeleteObjects: 0.340500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 126.396009 seconds.
-  path: Assets/Scenes/scene3.unity
-  artifactKey: Guid(9fa955ebf5cfede4aa7999cb47e567b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene3.unity using Guid(9fa955ebf5cfede4aa7999cb47e567b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8933a042cdb0d9be3175a25a93b34c7') in 0.020589 seconds
-  Import took 0.027450 seconds .
+  path: Assets/scripts/GameManager.cs
+  artifactKey: Guid(71868266c9879c849bf37e9c01fb6799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/GameManager.cs using Guid(71868266c9879c849bf37e9c01fb6799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c62aeb892da3d425402e31c29492616') in 0.086230 seconds
+  Import took 0.090957 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005444 seconds.
-  path: Assets/Scenes/scene3.unity
-  artifactKey: Guid(9fa955ebf5cfede4aa7999cb47e567b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene3.unity using Guid(9fa955ebf5cfede4aa7999cb47e567b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8933a042cdb0d9be3175a25a93b34c7') in 0.009242 seconds
-  Import took 0.020965 seconds .
+  Time since last request: 518.932593 seconds.
+  path: Assets/models/arena
+  artifactKey: Guid(2716496adfc73084395d2f22e3b42185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena using Guid(2716496adfc73084395d2f22e3b42185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8249511be0c9b196a41be525ec1caabf') in 0.014605 seconds
+  Import took 0.022695 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.760038 seconds.
-  path: Assets/Scenes/scene2.unity
-  artifactKey: Guid(254f392c6e900b04696b55923a27e247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene2.unity using Guid(254f392c6e900b04696b55923a27e247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c2d4d395649541063483149a749bda') in 0.019053 seconds
-  Import took 0.026368 seconds .
+  Time since last request: 1.809502 seconds.
+  path: Assets/models/arena/patio_set
+  artifactKey: Guid(d4649eaec2a57f14b91db1f633b7a989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/patio_set using Guid(d4649eaec2a57f14b91db1f633b7a989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21bd3bc1839ec5d95c1c44ec9942c94') in 0.012159 seconds
+  Import took 0.018986 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002133 seconds.
-  path: Assets/Scenes/scene2.unity
-  artifactKey: Guid(254f392c6e900b04696b55923a27e247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene2.unity using Guid(254f392c6e900b04696b55923a27e247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c2d4d395649541063483149a749bda') in 0.010371 seconds
-  Import took 0.023484 seconds .
+  Time since last request: 0.001839 seconds.
+  path: Assets/models/arena/patio_set
+  artifactKey: Guid(d4649eaec2a57f14b91db1f633b7a989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/patio_set using Guid(d4649eaec2a57f14b91db1f633b7a989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21bd3bc1839ec5d95c1c44ec9942c94') in 0.004478 seconds
+  Import took 0.011410 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.572272 seconds.
-  path: Assets/Scenes/scene1.unity
-  artifactKey: Guid(7483ec4cf5d0e984fb05503046ccc564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene1.unity using Guid(7483ec4cf5d0e984fb05503046ccc564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee72f3e6627f9d4ca8d3a683b5c83a3e') in 0.022791 seconds
-  Import took 0.031227 seconds .
+  Time since last request: 0.743221 seconds.
+  path: Assets/models/arena/house
+  artifactKey: Guid(97763492df12c7b499a6cb2ba73f6327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house using Guid(97763492df12c7b499a6cb2ba73f6327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bb9f336c8aefd906f1d637eb7f501a') in 0.014591 seconds
+  Import took 0.021195 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001227 seconds.
-  path: Assets/Scenes/scene1.unity
-  artifactKey: Guid(7483ec4cf5d0e984fb05503046ccc564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/scene1.unity using Guid(7483ec4cf5d0e984fb05503046ccc564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee72f3e6627f9d4ca8d3a683b5c83a3e') in 0.006587 seconds
-  Import took 0.013848 seconds .
+  Time since last request: 0.001993 seconds.
+  path: Assets/models/arena/house
+  artifactKey: Guid(97763492df12c7b499a6cb2ba73f6327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house using Guid(97763492df12c7b499a6cb2ba73f6327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bb9f336c8aefd906f1d637eb7f501a') in 0.007393 seconds
+  Import took 0.013803 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 39.070713 seconds.
-  path: Assets/models/plant1/source/PeaShooter2.fbx
-  artifactKey: Guid(02de5aadce742394ba32b424cdb03243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1/source/PeaShooter2.fbx using Guid(02de5aadce742394ba32b424cdb03243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10da6ad784615690fd4612f682c7e63b') in 0.080286 seconds
-  Import took 0.085196 seconds .
+  Time since last request: 5.337005 seconds.
+  path: Assets/models/arena/house/textures
+  artifactKey: Guid(a1e7f2ee30f62b94faaafb2e5b000f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures using Guid(a1e7f2ee30f62b94faaafb2e5b000f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1238252f28dc96b559e0ba871a8ebb') in 0.013129 seconds
+  Import took 0.019848 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.602982 seconds.
-  path: Assets/models/plant1/textures/internal_ground_ao_texture.jpeg
-  artifactKey: Guid(00cbd1b4849155f45ae5c6723d7111d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1/textures/internal_ground_ao_texture.jpeg using Guid(00cbd1b4849155f45ae5c6723d7111d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57b14d36baa3c57af2ebc47f458dce9') in 0.049109 seconds
-  Import took 0.054472 seconds .
+  Time since last request: 0.000870 seconds.
+  path: Assets/models/arena/house/textures
+  artifactKey: Guid(a1e7f2ee30f62b94faaafb2e5b000f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures using Guid(a1e7f2ee30f62b94faaafb2e5b000f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1238252f28dc96b559e0ba871a8ebb') in 0.003523 seconds
+  Import took 0.011173 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/models/plant1/textures/Material Base Color PeaShooter.png
-  artifactKey: Guid(29a22f55c7055314aa8c4ebe89d7f977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/plant1/textures/Material Base Color PeaShooter.png using Guid(29a22f55c7055314aa8c4ebe89d7f977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857b551b72f78920a42e0175e40d9772') in 0.032912 seconds
-  Import took 0.038787 seconds .
+  Time since last request: 0.174579 seconds.
+  path: Assets/models/arena/house/textures/_.jpg
+  artifactKey: Guid(e5daa14af6d9796459833d92fd0205f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_.jpg using Guid(e5daa14af6d9796459833d92fd0205f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06632603fd333d18263b58803c74fa61') in 0.099972 seconds
+  Import took 0.106688 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 472.306603 seconds.
-  path: Assets/PeaShooter2.prefab
+  Time since last request: 0.000338 seconds.
+  path: Assets/models/arena/house/textures/Vegetation_Grass.jpg
+  artifactKey: Guid(b3c2c8ad939abf64aaea797e3d33b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/Vegetation_Grass.jpg using Guid(b3c2c8ad939abf64aaea797e3d33b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7edc5efda39f725e85eb6532229121') in 0.025838 seconds
+  Import took 0.031183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/models/arena/house/textures/_11.jpg
+  artifactKey: Guid(895b223ba21b5ba4f88c64d10953b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_11.jpg using Guid(895b223ba21b5ba4f88c64d10953b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bc9723418c7185cd1283cd2f14a604') in 0.027798 seconds
+  Import took 0.032876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/models/arena/house/textures/cut_out_Trees_pack_6___4_.jpg
+  artifactKey: Guid(0adab16bc8a605d48b8f22863aa95088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/cut_out_Trees_pack_6___4_.jpg using Guid(0adab16bc8a605d48b8f22863aa95088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b01afe1edec75d3a2416bcab2c29300') in 0.075311 seconds
+  Import took 0.080438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/models/arena/house/textures/_1.jpg
+  artifactKey: Guid(6f8f266d460ee8b4bbc8a3595794bc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_1.jpg using Guid(6f8f266d460ee8b4bbc8a3595794bc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4aad304b5b2eeb43aa3377807f10394') in 0.042589 seconds
+  Import took 0.047191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/models/arena/house/textures/_22.jpg
+  artifactKey: Guid(19b6733d3e9c8614bbcd38a61562a778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_22.jpg using Guid(19b6733d3e9c8614bbcd38a61562a778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66764672ae887abe5f7d9857c9b31f0') in 0.022548 seconds
+  Import took 0.027638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/models/arena/house/textures/_46.jpg
+  artifactKey: Guid(6abfceb4e3496c648871e1ae23621580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_46.jpg using Guid(6abfceb4e3496c648871e1ae23621580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cfe714f8826bedb62046de481201cf') in 0.030812 seconds
+  Import took 0.035417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/models/arena/house/textures/shrub_png_by_dbszabo1_d368txl.png
+  artifactKey: Guid(f06a84dc21f8e2a419c38999e67d6cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/shrub_png_by_dbszabo1_d368txl.png using Guid(f06a84dc21f8e2a419c38999e67d6cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378f65d634224a87ed5deb474b4e92a0') in 0.040642 seconds
+  Import took 0.046479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/models/arena/house/textures/Cladding_Stucco_White.jpg
+  artifactKey: Guid(64a2b8198e54f39438eba7a48ee7891a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/Cladding_Stucco_White.jpg using Guid(64a2b8198e54f39438eba7a48ee7891a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5bf973f6bd87466ea6b60102f192aa') in 0.030901 seconds
+  Import took 0.042077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/models/arena/house/textures/wakeley_shrubs_odd_shapes_ush.jpg
+  artifactKey: Guid(a4a5e2a7da1bbb547b7a20886aaec14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/wakeley_shrubs_odd_shapes_ush.jpg using Guid(a4a5e2a7da1bbb547b7a20886aaec14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b24be94f4bbe31eea1bbb9aade389af') in 0.038290 seconds
+  Import took 0.043692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/models/arena/house/textures/_29.jpg
+  artifactKey: Guid(dec71efa008cdf64f96352dc919dbb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_29.jpg using Guid(dec71efa008cdf64f96352dc919dbb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee9e1ba00a8a33ba93c28b475a37fbe') in 0.042890 seconds
+  Import took 0.048218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/models/arena/house/textures/cut_out_Trees_pack_6___13_.jpg
+  artifactKey: Guid(481979e636ac1204797bab67df591d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/cut_out_Trees_pack_6___13_.jpg using Guid(481979e636ac1204797bab67df591d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c9cf69332cd25327647d6c3c17002c') in 0.075237 seconds
+  Import took 0.081062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/models/arena/house/textures/Concrete_Aggregate_Smoke.jpg
+  artifactKey: Guid(b7ad992856a63a747a1d1f152eb53edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/Concrete_Aggregate_Smoke.jpg using Guid(b7ad992856a63a747a1d1f152eb53edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0e387267c83276a70b99a40bb5e5a1') in 0.023881 seconds
+  Import took 0.029111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/models/arena/house/textures/_26.jpg
+  artifactKey: Guid(2eb06ed93aecd92409bceecb57240424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_26.jpg using Guid(2eb06ed93aecd92409bceecb57240424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f5ffea22c2c312c0f83327761b39b6') in 0.028921 seconds
+  Import took 0.033913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/models/arena/house/textures/_7.jpg
+  artifactKey: Guid(206dd81b0a9745e40ab39bb3c0ae0ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/_7.jpg using Guid(206dd81b0a9745e40ab39bb3c0ae0ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60697e31fa717fd71b3f1cbf440aeec') in 0.028733 seconds
+  Import took 0.033608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/models/arena/house/textures/Metal_Silver.jpg
+  artifactKey: Guid(3d00f41910a206944aefac3568e3a5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/textures/Metal_Silver.jpg using Guid(3d00f41910a206944aefac3568e3a5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c242f9094f337d0ab90ffc35091860') in 0.028975 seconds
+  Import took 0.034256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.257535 seconds.
+  path: Assets/models/arena/house/Materials
+  artifactKey: Guid(a978007519b52a446afe657d08c7978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/Materials using Guid(a978007519b52a446afe657d08c7978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10ef0885043044b610e04e458a3b2b3') in 0.012731 seconds
+  Import took 0.020355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001299 seconds.
+  path: Assets/models/arena/house/Materials
+  artifactKey: Guid(a978007519b52a446afe657d08c7978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/Materials using Guid(a978007519b52a446afe657d08c7978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10ef0885043044b610e04e458a3b2b3') in 0.004613 seconds
+  Import took 0.011225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129315 seconds.
+  path: Assets/models/arena/house/Materials/Vegetation_Grass.mat
+  artifactKey: Guid(cae8f5ecb9b3b13459e83dcd0064affd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/Materials/Vegetation_Grass.mat using Guid(cae8f5ecb9b3b13459e83dcd0064affd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92718c175bfb5bac89fda62bfa79d834') in 0.116759 seconds
+  Import took 0.123140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 161.374696 seconds.
+  path: Assets/models/arena/house/Materials/_11.mat
+  artifactKey: Guid(169a27bf8e414c64da09943105c92b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/house/Materials/_11.mat using Guid(169a27bf8e414c64da09943105c92b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1372c5af70173ba01175c23d9a1703f') in 0.029230 seconds
+  Import took 0.034906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.043925 seconds.
+  path: Assets/materials/GrassMaterial3.mat
+  artifactKey: Guid(8787270312d8d984d87efbbc6caac789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/materials/GrassMaterial3.mat using Guid(8787270312d8d984d87efbbc6caac789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73066ff1a5140069fc970d1c7f88c279') in 0.039912 seconds
+  Import took 0.046440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/materials/ground3.mat
+  artifactKey: Guid(7773c834a7904c54ca1c4a8ee5e092d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/materials/ground3.mat using Guid(7773c834a7904c54ca1c4a8ee5e092d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca1330ed1a1ab9c07dff570de85e417') in 0.037112 seconds
+  Import took 0.043631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/materials/RoadMaterial.mat
+  artifactKey: Guid(0f614e141fe3b6944ba9af5301b222ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/materials/RoadMaterial.mat using Guid(0f614e141fe3b6944ba9af5301b222ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab76f1f6a4ae836537e4d8511c1490f') in 0.039727 seconds
+  Import took 0.051335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.874796 seconds.
+  path: Assets/models/arena/patio_set/textures/Glass_Top_normals.tga.png
+  artifactKey: Guid(e51d17bd87092704dab4263c730efc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/patio_set/textures/Glass_Top_normals.tga.png using Guid(e51d17bd87092704dab4263c730efc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbd71ff0e4fab02bec065cb5d822dc9') in 0.140108 seconds
+  Import took 0.149067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/models/arena/patio_set/textures/internal_ground_ao_texture.jpeg
+  artifactKey: Guid(3eacb533e5f6200489bf99aea386fb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/patio_set/textures/internal_ground_ao_texture.jpeg using Guid(3eacb533e5f6200489bf99aea386fb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca867980c75453dd224e2125b8284d1') in 0.041343 seconds
+  Import took 0.048485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/models/arena/patio_set/textures/Glass_Top_normals.tga.png
+  artifactKey: Guid(e51d17bd87092704dab4263c730efc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/arena/patio_set/textures/Glass_Top_normals.tga.png using Guid(e51d17bd87092704dab4263c730efc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbd71ff0e4fab02bec065cb5d822dc9') in 0.118975 seconds
+  Import took 0.124788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/images/textures/ground/ground.png
+  artifactKey: Guid(91d57b30ea5a6674d9fa3af65bf9057e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/textures/ground/ground.png using Guid(91d57b30ea5a6674d9fa3af65bf9057e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e15f1e3beb040bf634522237d5d88de') in 0.052057 seconds
+  Import took 0.058933 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006552 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.302 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Got response
+{"data":{"id":"5da111ed-6716-44f0-98ef-c1f8ceb9ef86"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.2 MB.
+System memory in use after: 91.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2105.
+Total: 3.347100 ms (FindLiveObjects: 0.283200 ms CreateObjectMapping: 0.179000 ms MarkObjects: 2.556500 ms  DeleteObjects: 0.326000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010022 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.237 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2108.
+Total: 5.287600 ms (FindLiveObjects: 0.375600 ms CreateObjectMapping: 0.244300 ms MarkObjects: 4.258400 ms  DeleteObjects: 0.406000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005531 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.138 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2111.
+Total: 4.010300 ms (FindLiveObjects: 0.515800 ms CreateObjectMapping: 0.214900 ms MarkObjects: 3.012800 ms  DeleteObjects: 0.263900 ms)
+
+<WakaTime> Got response
+{"data":{"id":"8eb0f5a3-8c63-49f8-8c9c-c336a4a8922d"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006673 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.025 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Got response
+{"data":{"id":"00b4a706-c19e-49ea-9c0a-514ace606d1a"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2114.
+Total: 3.474300 ms (FindLiveObjects: 0.281300 ms CreateObjectMapping: 0.172300 ms MarkObjects: 2.687600 ms  DeleteObjects: 0.330400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006202 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.997 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2117.
+Total: 4.268200 ms (FindLiveObjects: 0.287200 ms CreateObjectMapping: 0.174500 ms MarkObjects: 3.394100 ms  DeleteObjects: 0.409500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004868 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.694 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Got response
+{"data":{"id":"6456e81c-2fd1-4aa3-b11b-911677f85086"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2120.
+Total: 3.395900 ms (FindLiveObjects: 0.317800 ms CreateObjectMapping: 0.171200 ms MarkObjects: 2.638100 ms  DeleteObjects: 0.266500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 638.355003 seconds.
+  path: Assets/prefabs/PointsCanvas.prefab
+  artifactKey: Guid(264a01f344ba47448a491365f7ebf3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/PointsCanvas.prefab using Guid(264a01f344ba47448a491365f7ebf3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7c9f20711dc3c8eff916be50dbdea5') in 0.071548 seconds
+  Import took 0.077502 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006324 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.360 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Got response
+{"data":{"id":"c2521249-e1c7-48ad-b0bb-987fff3a9a57"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2123.
+Total: 3.436400 ms (FindLiveObjects: 0.278400 ms CreateObjectMapping: 0.178500 ms MarkObjects: 2.713100 ms  DeleteObjects: 0.264300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 129.958489 seconds.
+  path: Assets/prefabs/bullets/bullet1.prefab
+  artifactKey: Guid(651ffe21a0d16484a8d14cd8e1dba7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/bullets/bullet1.prefab using Guid(651ffe21a0d16484a8d14cd8e1dba7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e871941d82610b656bac6c1343b5dd63') in 0.123366 seconds
+  Import took 0.130278 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005745 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.236 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Got response
+{"data":{"id":"bb29abb0-b64d-4780-82e8-bb15daf2ef36"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
+
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2128.
+Total: 3.615400 ms (FindLiveObjects: 0.271300 ms CreateObjectMapping: 0.166600 ms MarkObjects: 2.828000 ms  DeleteObjects: 0.346900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 124.264923 seconds.
+  path: Assets/prefabs/plants/Plant1.prefab
   artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PeaShooter2.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fcfd990f154607268a768bae7447fac') in 0.058880 seconds
-  Import took 0.065750 seconds .
+Start importing Assets/prefabs/plants/Plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67945bdd5d5f4b51610456c98bc78d2') in 0.129133 seconds
+  Import took 0.135645 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.234239 seconds.
-  path: Assets/plant1.prefab
-  artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3201011f552bf080c7ef4db962dfbd') in 0.036707 seconds
-  Import took 0.043651 seconds .
+  Time since last request: 0.000289 seconds.
+  path: Assets/prefabs/plants/Plant2.prefab
+  artifactKey: Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/Plant2.prefab using Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46843939fe3f20c76620f202fd745580') in 0.476114 seconds
+  Import took 0.481725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/prefabs/plants/plant3.prefab
+  artifactKey: Guid(ac9f82a50d3f5754ea99c20e8d0f9a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/plant3.prefab using Guid(ac9f82a50d3f5754ea99c20e8d0f9a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ae359e8d22ec89d148f8dc21c44790') in 0.075763 seconds
+  Import took 0.082473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/prefabs/plants/Plant4.prefab
+  artifactKey: Guid(e38f992abd1ec0b498d2780f0820aaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/Plant4.prefab using Guid(e38f992abd1ec0b498d2780f0820aaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda1c5e8be28890a50b61d6ee96336d8') in 0.139903 seconds
+  Import took 0.148744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009960 seconds.
+  path: Assets/prefabs/plants/Plant4.prefab
+  artifactKey: Guid(e38f992abd1ec0b498d2780f0820aaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/Plant4.prefab using Guid(e38f992abd1ec0b498d2780f0820aaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda1c5e8be28890a50b61d6ee96336d8') in 0.134843 seconds
+  Import took 0.144591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.153469 seconds.
+  path: Assets/prefabs/plants/Plant2.prefab
+  artifactKey: Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/Plant2.prefab using Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b9b1c0c029efa1acb8ef037eb5ed88') in 0.504158 seconds
+  Import took 0.512021 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005590 seconds.
+Registered in 0.004058 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  3.805 seconds
+- Completed reload, in  2.269 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.3 MB.
-System memory in use after: 68.4 MB.
+<WakaTime> Got response
+{"data":{"id":"695a3416-0fee-4975-8db6-1e3698cf692c"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1871.
-Total: 4.783600 ms (FindLiveObjects: 0.507000 ms CreateObjectMapping: 0.202100 ms MarkObjects: 3.952700 ms  DeleteObjects: 0.119200 ms)
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
 
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
+
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2132.
+Total: 3.280900 ms (FindLiveObjects: 0.302200 ms CreateObjectMapping: 0.174700 ms MarkObjects: 2.541500 ms  DeleteObjects: 0.259900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 83878.749564 seconds.
-  path: Assets/plant1.prefab
-  artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c08ed53f069b62c60b2384e66450dd') in 0.230843 seconds
-  Import took 0.237830 seconds .
+  Time since last request: 93.356720 seconds.
+  path: Assets/prefabs/plants/Plant2.prefab
+  artifactKey: Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/plants/Plant2.prefab using Guid(a6e7437dd2f25d04383de4be4b9c9bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918cf141d6c73014f160ee0a24897300') in 0.660011 seconds
+  Import took 0.667393 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015558 seconds.
+Registered in 0.004786 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<WakaTime> Initializing...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:60)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 60)
+
+<WakaTime> Sending heartbeat...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:SendHeartbeat (bool) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:128)
+WakaTime.Plugin:Initialize () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:62)
+WakaTime.Plugin:.cctor () (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 128)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  2.147 seconds
+- Completed reload, in  2.392 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.3 MB.
-System memory in use after: 68.4 MB.
+<WakaTime> Got response
+{"data":{"id":"0970e1f3-69fa-4057-a2ca-454ec713771e"}}
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:157)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1875.
-Total: 5.139500 ms (FindLiveObjects: 0.447400 ms CreateObjectMapping: 0.209300 ms MarkObjects: 4.357500 ms  DeleteObjects: 0.121800 ms)
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 157)
 
-========================================================================
-Received Import Request.
-  Time since last request: 90.259425 seconds.
-  path: Assets/plant1.prefab
-  artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b6a629c7d4685bf246c7ec1e77c9c9a') in 0.185117 seconds
-  Import took 0.191698 seconds .
+<WakaTime> Sent heartbeat!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<>c__DisplayClass21_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs:173)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009337 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.384 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.3 MB.
-System memory in use after: 68.4 MB.
+(Filename: C:/Users/Laitooo/Downloads/unity-wakatime-master/unity-wakatime-master/Assets/com.vladfaust.unitywakatime/Editor/Plugin.cs Line: 173)
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1879.
-Total: 4.498200 ms (FindLiveObjects: 0.511400 ms CreateObjectMapping: 0.211400 ms MarkObjects: 3.656000 ms  DeleteObjects: 0.116800 ms)
+Unloading 1562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.5 MB.
+System memory in use after: 91.4 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 671.481192 seconds.
-  path: Assets/zombie1.prefab
-  artifactKey: Guid(8e5d2c5bb39fb9148b72df10ce1fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/zombie1.prefab using Guid(8e5d2c5bb39fb9148b72df10ce1fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d727d2d81c34119723802b20a88a12') in 0.169893 seconds
-  Import took 0.176081 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2136.
+Total: 4.611300 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.179700 ms MarkObjects: 3.685400 ms  DeleteObjects: 0.385000 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6a35c3cddc746e7501c0bd0ed6d4ce') in 0.021052 seconds
-  Import took 0.029237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.530163 seconds.
-  path: Assets/zombie1.prefab
-  artifactKey: Guid(8e5d2c5bb39fb9148b72df10ce1fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/zombie1.prefab using Guid(8e5d2c5bb39fb9148b72df10ce1fe875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c017b70e1191cc28d5eaea0448c1cb20') in 0.029275 seconds
-  Import took 0.037552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.891723 seconds.
-  path: Assets/plant1.prefab
-  artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a766ccf49cb22d905dd01c447855135d') in 0.066298 seconds
-  Import took 0.073350 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015835 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.582 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1884.
-Total: 7.401800 ms (FindLiveObjects: 0.844200 ms CreateObjectMapping: 0.619300 ms MarkObjects: 5.810400 ms  DeleteObjects: 0.125000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010417 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.875 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1887.
-Total: 4.386100 ms (FindLiveObjects: 0.301900 ms CreateObjectMapping: 0.179600 ms MarkObjects: 3.798100 ms  DeleteObjects: 0.103800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006246 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.630 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1890.
-Total: 5.049700 ms (FindLiveObjects: 0.449800 ms CreateObjectMapping: 0.132900 ms MarkObjects: 4.353300 ms  DeleteObjects: 0.111200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006417 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 6.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.356 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1893.
-Total: 4.790400 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.094000 ms MarkObjects: 4.094600 ms  DeleteObjects: 0.350900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 632.277741 seconds.
-  path: Assets/plant1.prefab
-  artifactKey: Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/plant1.prefab using Guid(fcb3d9dc5734a4045a30ac6b90521253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031216a8ea24bd46d17c37351ff80fdd') in 0.201605 seconds
-  Import took 0.206659 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

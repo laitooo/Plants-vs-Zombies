@@ -3,7 +3,7 @@
 
 
 TODO: 
-- Make the plants focus on enemy in the same lane
+- Make the plants focus on enemy in the same lane                   done
 - Add another plant                                                 done
 - Add zombie model
 - Create points manager                                             done
@@ -16,8 +16,8 @@ TODO:
 - Soundtracks                                                       done
 - Use loading screen instead of fading out
 - Ready set go
-- Ground texture
-- Background texture
+- Ground texture                                                    done
+- Background texture                                                done
 - Level won 
 - Plants health
 - Levels
