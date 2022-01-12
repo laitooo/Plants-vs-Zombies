@@ -8154,6 +8154,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1544007679}
     - target: {fileID: 385325004520175102, guid: ec01cd680ce638c4d87d6e1b5d331452, type: 3}
+      propertyPath: size.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 385325004520175102, guid: ec01cd680ce638c4d87d6e1b5d331452, type: 3}
+      propertyPath: size.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 385325004520175102, guid: ec01cd680ce638c4d87d6e1b5d331452, type: 3}
       propertyPath: pointDelay
       value: 5
       objectReference: {fileID: 0}
