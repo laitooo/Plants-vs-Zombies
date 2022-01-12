@@ -1,3 +1,4 @@
 Base path: 'C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data', plugins path 'C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: shutdown

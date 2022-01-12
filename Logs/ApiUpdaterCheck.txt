@@ -145,3 +145,13 @@ C# parse time         : 371ms
 candidates check time : 51ms
 console write time    : 1ms
 
+[api-updater (non-obsolete-error-filter)] 1/11/2022 10:52:00 PM : Starting C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 980.4315ms
+moved types parse time: 81ms
+candidates parse time : 1ms
+C# parse time         : 424ms
+candidates check time : 66ms
+console write time    : 1ms
+
