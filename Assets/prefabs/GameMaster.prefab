@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5299182839188071523}
   - component: {fileID: 8895534105705342005}
   - component: {fileID: 7272688474863337099}
+  - component: {fileID: 1533870711412472337}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -48,7 +49,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 319989831410491488, guid: 8e5d2c5bb39fb9148b72df10ce1fe875, type: 3}
   countDownText: {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
+  waves:
+  - zombie: {fileID: 8454374408447904036, guid: 9eb48d519ddccc446a31633c66280af8, type: 3}
+    numberZombies: 3
+    spawnDelay: 8
+  - zombie: {fileID: 7647542894553211748, guid: 066e7a7fa10a882428ee95aa1ea90f16, type: 3}
+    numberZombies: 7
+    spawnDelay: 2
+  - zombie: {fileID: 7647542894553211748, guid: 7460acc805dc82940ba8e5f372154c0e, type: 3}
+    numberZombies: 9
+    spawnDelay: 1.5
+  - zombie: {fileID: 7647542894553211748, guid: 8e5d2c5bb39fb9148b72df10ce1fe875, type: 3}
+    numberZombies: 5
+    spawnDelay: 2.5
+  spawnPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5299182839188071523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b3905c5d50bf94cb244994215811fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRemoveToolSelected: 0
+  isUpgrading: 0
 --- !u!114 &8895534105705342005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +98,7 @@ MonoBehaviour:
   Money: 0
   moneyCounter: {fileID: 0}
   startMoney: 500
+  pointAmount: 25
 --- !u!114 &7272688474863337099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,3 +111,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616f1935f133b3f47a38f87ea0fd0e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  livesCounter: {fileID: 0}
+  startLives: 20
+  Lives: 0
+  rounds: 0
+--- !u!114 &1533870711412472337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026721962918115292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71868266c9879c849bf37e9c01fb6799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuScene: MainMenu
+  levelSelectorScene: LevelSelector
+  gameOverUi: {fileID: 0}
+  pauseMenuUi: {fileID: 0}
+  roundsText: {fileID: 0}
+  sceneChanger: {fileID: 0}
