@@ -7,6 +7,8 @@ public class Plant : MonoBehaviour {
     public float fireRange = 20f;
     public float firstFireTime = 2f;
     public float secondFireTime = 0f;
+    public float health = 5f;
+    private float currentHealth;
     private float fireConutdown = 0f;
     private bool hasDoubleChoot;
     private bool isCurrentFirst = true;
@@ -18,6 +20,7 @@ public class Plant : MonoBehaviour {
 
     void Start() {
         hasDoubleChoot = secondFireTime != 0f;
+        currentHealth = health;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -77,5 +80,26 @@ public class Plant : MonoBehaviour {
         GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, newPosition, transform.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
         bullet.seek(target);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Zombie") {
+            // Debug.Log("Zombie approached a plant");
+        } else if (other.gameObject.tag == "ZombieArm") {
+            currentHealth -= 1f;
+            checkDeath();
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "Zombie") {
+            Debug.Log("Zombie disappeared");
+        }
+    }
+
+    private void checkDeath() {
+        if (currentHealth == 0) {
+            Destroy(gameObject);
+        }
     }
 }
