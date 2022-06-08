@@ -155,3 +155,23 @@ C# parse time         : 424ms
 candidates check time : 66ms
 console write time    : 1ms
 
+[api-updater (non-obsolete-error-filter)] 3/22/2022 5:10:10 PM : Starting C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1148.5262ms
+moved types parse time: 79ms
+candidates parse time : 1ms
+C# parse time         : 405ms
+candidates check time : 39ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 3/23/2022 6:56:59 AM : Starting C:/Users/Laitooo/Desktop/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 164.9771ms
+moved types parse time: 100ms
+candidates parse time : 2ms
+C# parse time         : 368ms
+candidates check time : 66ms
+console write time    : 1ms
+
