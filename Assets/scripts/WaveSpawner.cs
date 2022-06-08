@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour {
     private float countDown = 0f;
     private int waveIndex = 0;
     public Wave[] waves;
+    public Transform[] spawnPositions;
 
     void Start() {
         countDown = timeBetweenWaves;
@@ -38,6 +39,10 @@ public class WaveSpawner : MonoBehaviour {
     IEnumerator spawnWave() {
         PlayerManager.instance.rounds++;
         Wave wave = waves[waveIndex];
+        float t = 0f;
+        t += (wave.numberZombies * wave.spawnDelay);
+        WaveBar.instance.startBar(t);
+
         for (int i=0; i<wave.numberZombies; i++) {
             spawnEnemy(wave.zombie);
             yield return new WaitForSeconds(wave.spawnDelay);
@@ -47,7 +52,7 @@ public class WaveSpawner : MonoBehaviour {
 
     void spawnEnemy(GameObject prefab) {
         int x = Random.Range(0, 5);
-        Instantiate(prefab, new Vector3(x * 4.1f, 1.5f, 28.7f), Quaternion.Euler(0, 0, 0));
+        Instantiate(prefab, spawnPositions[x].position, Quaternion.Euler(0, 0, 0));
         zombiesAlive++;
     }
 }
