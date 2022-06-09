@@ -1,6 +1,6 @@
 # Plants-vs-Zombies
 A simple Plants vs zombies game clone made in unity with C#
-You can see the demo video on [youtube](https://youtu.be/vn2zIqOBnsc)
+You can see the demo video on [youtube](https://www.youtube.com/watch?v=vn2zIqOBnsc)
 
 ## Screenshots
 <p>
