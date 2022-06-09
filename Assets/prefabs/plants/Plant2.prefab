@@ -739,11 +739,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3402727088931632554}
-  - component: {fileID: 7040863087003999067}
   - component: {fileID: 2374545241101311485}
+  - component: {fileID: 1485151408246290475}
+  - component: {fileID: 4263293186503354627}
+  - component: {fileID: 7040863087003999067}
+  - component: {fileID: -363903311795895960}
   m_Layer: 0
   m_Name: Plant2
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -766,20 +769,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7040863087003999067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2626507805085806352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd52bf10c3244e4b8800283ddb98357, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointCanvas: {fileID: 2389659931266892216}
-  pointDelay: 10
 --- !u!95 &2374545241101311485
 Animator:
   serializedVersion: 3
@@ -799,6 +788,65 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1485151408246290475
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626507805085806352}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4263293186503354627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626507805085806352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 27.1, z: 18}
+  m_Center: {x: 0, y: 7.71, z: 0}
+--- !u!114 &7040863087003999067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626507805085806352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd52bf10c3244e4b8800283ddb98357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointCanvas: {fileID: 2389659931266892216}
+  pointDelay: 10
+--- !u!114 &-363903311795895960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626507805085806352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc75bafaf80ef8048925a8ed3ac2048a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  objectDiedCallback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2665027088858377107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3699517303800683230}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8541405497376218032}

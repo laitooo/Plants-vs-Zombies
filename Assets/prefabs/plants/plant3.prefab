@@ -9,10 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1590327200977108163}
+  - component: {fileID: 7230376916640709791}
+  - component: {fileID: 4893323300857197659}
   - component: {fileID: 5674860432596760693}
+  - component: {fileID: -252744925844102069}
   m_Layer: 0
   m_Name: plant3
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +35,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7230376916640709791
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115049726936213113}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4893323300857197659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115049726936213113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.18, y: 3.47, z: 2.4}
+  m_Center: {x: 0, y: 1.79, z: 0}
 --- !u!114 &5674860432596760693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,12 +76,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd06016beb7ec4a89685dbcfa228c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatingSpeed: 20
   fireRange: 50
   firstFireTime: 1
   secondFireTime: 0
   zombieTag: Zombie
   bulletPrefab: {fileID: 8008133890772263078, guid: b383da48f138fec449569043c20a7991, type: 3}
+--- !u!114 &-252744925844102069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115049726936213113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc75bafaf80ef8048925a8ed3ac2048a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  objectDiedCallback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2530851731703793024
 GameObject:
   m_ObjectHideFlags: 0

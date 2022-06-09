@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3128677779696767478}
-  - component: {fileID: 6946857686965946224}
   - component: {fileID: 1592294970643251999}
   - component: {fileID: 7156360711782225820}
+  - component: {fileID: 6946857686965946224}
+  - component: {fileID: -4837472616756298857}
   m_Layer: 0
   m_Name: Plant1
   m_TagString: Plant
@@ -34,24 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6946857686965946224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3128677779696767476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2acd06016beb7ec4a89685dbcfa228c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireRange: 50
-  firstFireTime: 1
-  secondFireTime: 0
-  health: 5
-  zombieTag: Zombie
-  bulletPrefab: {fileID: 8008133890772263078, guid: 651ffe21a0d16484a8d14cd8e1dba7d6, type: 3}
 --- !u!54 &1592294970643251999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -81,6 +64,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.85, y: 2.71, z: 2.37}
   m_Center: {x: 0, y: 1.76, z: 0}
+--- !u!114 &6946857686965946224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128677779696767476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acd06016beb7ec4a89685dbcfa228c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRange: 50
+  firstFireTime: 1
+  secondFireTime: 0
+  zombieTag: Zombie
+  bulletPrefab: {fileID: 8008133890772263078, guid: 651ffe21a0d16484a8d14cd8e1dba7d6, type: 3}
+--- !u!114 &-4837472616756298857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128677779696767476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc75bafaf80ef8048925a8ed3ac2048a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1001 &3128677779814880856
 PrefabInstance:
   m_ObjectHideFlags: 0
