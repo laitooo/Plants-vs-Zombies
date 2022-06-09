@@ -4,10 +4,10 @@ You can see the demo video on [youtube](https://youtu.be/vn2zIqOBnsc)
 
 ## Screenshots
 <p>
-    <img src="screenshots/1.png" width="400" />
-    <img src="screenshots/1.png" width="400" />
-    <img src="screenshots/1.png" width="400" />
-    <img src="screenshots/1.png" width="400" />
+    <img src="screenshots/1.JPG" width="400" />
+    <img src="screenshots/2.JPG" width="400" />
+    <img src="screenshots/3.JPG" width="400" />
+    <img src="screenshots/4.JPG" width="400" />
 </p>
 
 
