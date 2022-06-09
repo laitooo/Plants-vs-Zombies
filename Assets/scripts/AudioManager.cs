@@ -11,12 +11,13 @@ public class AudioManager : MonoBehaviour {
             instance = this;
         } else {
             Destroy(gameObject);
-            Debug.LogError("More than one game manager in the scene!");
-            return;
         }
 
-        DontDestroyOnLoad(gameObject);
-        
+        loadAudioSources();
+        DontDestroyOnLoad(instance);
+    }
+
+    void loadAudioSources() {
         foreach(Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;

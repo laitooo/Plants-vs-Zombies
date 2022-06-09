@@ -12,8 +12,13 @@ public class Shop : MonoBehaviour {
         buildManager = BuildManager.instance;
         plant1.costText.text = plant1.cost.ToString() + "$";
         plant2.costText.text = plant2.cost.ToString() + "$";
-        plant3.costText.text = plant3.cost.ToString() + "$";
-        plant4.costText.text = plant4.cost.ToString() + "$";
+        if (plant3.costText != null) {
+            plant3.costText.text = plant3.cost.ToString() + "$";
+        }
+
+        if (plant4.costText != null) {
+            plant4.costText.text = plant4.cost.ToString() + "$";
+        }
     }
 
     public void purchasePlant1() {
