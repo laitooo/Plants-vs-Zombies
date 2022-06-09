@@ -4,32 +4,15 @@ using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour {
 
     public static PlayerManager instance;    
-    void Awake() {
-        if (instance != null) {
-            Debug.LogError("More than one player manager in the scene!");
-            return;
-        }
-        instance = this;
-    }
-
-    public Text livesCounter;
-    public int startLives = 20;
-    [HideInInspector]
-    public int Lives;
     [HideInInspector]
     public int rounds;
     void Start() {
-      Lives = 20;
-      rounds = 0;
-      updateText();  
-    }
-
-    public void looseLife() {
-        Lives--;
-        updateText();
-    }
-
-    void updateText() {
-        livesCounter.text = "Lives = " + Lives.ToString();
+        if (instance != null) {
+            Destroy(gameObject);
+            Debug.LogError("More than one player manager in the scene!");
+        } else {
+            instance = this;
+        }
+        rounds = 0;
     }
 }

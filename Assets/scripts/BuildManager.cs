@@ -9,15 +9,16 @@ public class BuildManager : MonoBehaviour
     public bool isRemoveToolSelected;
     [HideInInspector]
     public bool isUpgrading;
-    
+
     void Awake() {
         if (instance != null) {
+            Destroy(gameObject);
             Debug.LogError("More than one build manage in the scene!");
-            return;
+        } else {
+            instance = this;
         }
-        instance = this;
     }
-
+    
     void Start() {
         isRemoveToolSelected = false;
         isUpgrading = false;

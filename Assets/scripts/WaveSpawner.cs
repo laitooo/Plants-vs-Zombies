@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour {
-    public static int zombiesAlive = 0;
+    public static int zombiesAlive;
     public Transform enemyPrefab;
     public Text countDownText;
     public float timeBetweenWaves = 5f;
@@ -13,6 +13,7 @@ public class WaveSpawner : MonoBehaviour {
 
     void Start() {
         countDown = timeBetweenWaves;
+        zombiesAlive = 0;
     }
 
     void Update() {
@@ -31,6 +32,7 @@ public class WaveSpawner : MonoBehaviour {
             countDown = timeBetweenWaves;
             return;
         }
+
 
         countDown -= Time.deltaTime;
         countDownText.text = Mathf.Round(countDown).ToString();

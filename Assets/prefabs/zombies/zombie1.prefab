@@ -1873,8 +1873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd51bc85ac6379489bfb0396dff2081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 0.5
-  defaultHealth: 480
+  defaultSpeed: 1
+  defaultHealth: 50
   health: 0
   speed: 0
   slownessTimer: 0
@@ -2046,7 +2046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8787752148181708217
 Transform:
   m_ObjectHideFlags: 0

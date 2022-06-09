@@ -3,29 +3,32 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
-
-    public static GameManager instance;    
-    void Awake() {
-        if (instance != null) {
-            Debug.LogError("More than one game manager in the scene!");
-            return;
-        }
-        instance = this;
-    }
-
+    public static GameManager instance;
     public string menuScene = "MainMenu";
     public string levelSelectorScene = "LevelSelector";
     public GameObject gameOverUi;
     public GameObject pauseMenuUi;
     public Text roundsText;
     public SceneChanger sceneChanger;
+    public bool playBackgroundMusic = true;
     [HideInInspector]
     public static bool isGameEnded;
+    private float brains;
 
     void Start() {
+        if (instance != null) {
+            Destroy(gameObject);
+            Debug.LogError("More than one game manager in the scene!");
+        } else {
+            instance = this;
+        }
+
         isGameEnded = false;
+        brains = 5f;
         AudioManager.instance.stop("MenuBackground");
-        AudioManager.instance.play("GamePlayBackground");
+        if (playBackgroundMusic) {
+            AudioManager.instance.play("GamePlayBackground");
+        }
     }
 
     void Update() {
@@ -33,10 +36,6 @@ public class GameManager : MonoBehaviour {
             return;
         }
         
-        if (PlayerManager.instance.Lives < 1) {
-            endGame();
-        }
-
         if (Input.GetKeyDown(KeyCode.Escape)) {
             toggle();
         }
@@ -72,5 +71,12 @@ public class GameManager : MonoBehaviour {
 
     public void wonLevel() {
         sceneChanger.transitionTo(levelSelectorScene);
+    }
+
+    public void eatBrain() {
+        brains -= 1;
+        if (brains == 0) {
+            endGame();
+        }
     }
 }
